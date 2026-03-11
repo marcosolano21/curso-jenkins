@@ -3,6 +3,9 @@
 echo "Activando el entorno virtual"
 source venv/Scripts/activate
 
+echo "Ingresando al directorio"
+cd proyecto-pytest
+
 echo "Instalando dependencias"
 pip install -r requirements.txt
 
