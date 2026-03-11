@@ -2,9 +2,10 @@
 
 echo "Activando el entorno virtual"
 
-if[!"-d venv"]; then
+if [!"-d venv"]; then
     python3 -m env env
-    
+
+fi 
 
 
 source venv/Scripts/activate
