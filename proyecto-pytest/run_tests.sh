@@ -13,9 +13,9 @@ fi
 
 if [ -f "venv/bin/activate" ]; then
     source venv/bin/activate
-elif [ -f "venv/Scripts/activate" ]; then  # Para Windows
+    elif [ -f "venv/Scripts/activate" ]; then  # Para Windows
     source venv/Scripts/activate
-else
+    else
     echo "Error al activar entorno virtual"
     exit 
 fi
