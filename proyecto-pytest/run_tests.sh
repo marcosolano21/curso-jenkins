@@ -3,7 +3,7 @@ echo "*****  Iniciando ejecucion de pruebas en Jenkins  *******"
 
 # Verificar si el entorno virtual existe
 
-if[ ! -d "venv" ]; then
+if [ ! -d "venv" ]; then
     echo" Creando entorno virtual...."
     python3 -m venv venv
 
