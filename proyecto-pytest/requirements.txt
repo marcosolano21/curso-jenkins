@@ -1,0 +1,4 @@
+# Aqui se agregan las librerias necesarias para que el proyecot funcione
+
+pytest
+pytest-html
