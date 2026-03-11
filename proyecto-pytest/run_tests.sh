@@ -13,24 +13,22 @@ fi
 
 if [ -f "venv/bin/activate" ]; then
     source venv/bin/activate
-    elif [ -f "venv/Scripts/activate" ]; then  # Para Windows
+elif [ -f "venv/Scripts/activate" ]; then  # Para Windows
     source venv/Scripts/activate
-    else
+else
     echo "Error al activar entorno virtual"
     exit 
 fi
 
 
-
-echo "Activando el entorno virtual"
-
-source venv/bin/activate
-
+# Verificar si pip esta instalado correctamente
 echo "Instalando dependencias"
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install --upgrade pip --break-system=packages
+pip install -r requirements.txt --break-system-packages
+
 
 echo "********** Ejecutando pruebas con pytest ***************"
-pytest tests/ --junitxml=reports/test-results.xml --html=reports/test-results.html --self-contained-html
+
+venv/bin/python -m pytest tests/ --junitxml=reports/test-results.xml --html=reports/test-results.html --self-contained-html
 
 echo "Pruebas finalizadas, revisar en reports"
