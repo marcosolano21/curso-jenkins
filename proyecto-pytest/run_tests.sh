@@ -8,7 +8,7 @@ if [!"-d venv"]; then
 fi 
 
 
-source venv/Scripts/activate
+source venv/bin/activate
 
 echo "Instalando dependencias"
 pip install --upgrade pip
