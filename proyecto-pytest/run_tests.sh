@@ -31,6 +31,6 @@ echo "********** Ejecutando pruebas con pytest ***************"
 pwd
 ls -l
 
-venv/Scripts/python -m pytest tests/ --junitxml=reports/test-results.xml --html=reports/test-results.html --self-contained-html
+python3 -m pytest tests/ --junitxml=reports/test-results.xml --html=reports/test-results.html --self-contained-html
 
 echo "Pruebas finalizadas, revisar en reports"
