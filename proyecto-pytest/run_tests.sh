@@ -27,6 +27,7 @@ pip install --upgrade pip --break-system=packages
 pip install -r requirements.txt --break-system-packages
 
 mkdir -p reports 
+pwd
 ls -l
 
 echo "********** Ejecutando pruebas con pytest ***************"
