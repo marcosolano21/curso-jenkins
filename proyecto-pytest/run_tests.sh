@@ -26,7 +26,7 @@ echo "Instalando dependencias"
 pip install --upgrade pip --break-system=packages
 pip install -r requirements.txt --break-system-packages
 
-mkdir -p reports
+mkdir -p reports 
 
 echo "********** Ejecutando pruebas con pytest ***************"
 
