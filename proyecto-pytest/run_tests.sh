@@ -26,7 +26,7 @@ echo "Instalando dependencias"
 pip install --upgrade pip --break-system=packages
 pip install -r requirements.txt --break-system-packages
 
-cd proyecto-pytest
+
 pwd
 ls -l
 
