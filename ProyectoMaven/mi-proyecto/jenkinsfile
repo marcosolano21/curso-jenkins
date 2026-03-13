@@ -1,0 +1,36 @@
+pipeline{
+    agen any
+    stages{
+        stage('Build'){
+            steps{
+                sh 'mnv clean install'                
+            }
+        }
+
+        stage('Test'){
+            steps{
+                sh 'mnv test'                
+            }
+        }
+
+        stage('Deploy'){
+            steps{
+                echo "Simulando un deployment de un servidor de aplicaciones"
+            }
+        }
+    }
+
+    post{
+        always{
+            echo "Siempre se ejecuta"
+        }
+
+        sucess{
+            echo "Este bloque se ejecuta si todo el pipeline se ejecuta correctamente"
+        }
+
+        failure{
+            echo "Este bloque se ejecuta si el pipeline falla"
+        }
+    }
+}
