@@ -25,7 +25,7 @@ pipeline{
             echo "Siempre se ejecuta"
         }
 
-        sucess{
+        success{
             echo "Este bloque se ejecuta si todo el pipeline se ejecuta correctamente"
         }
 
